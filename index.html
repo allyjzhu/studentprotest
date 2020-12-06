@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <script>
+    </script>
+    <a-scene loading-screen="dotsColor: blue; backgroundColor: white" >
+        <a-assets>
+            <img id="sky" src="img/sky.jpeg">
+            <img id="floor" src="img/floor.jpg">
+            <img id="minjung1" src="img/Minjung1.jpg">
+            <img id="minjung2" src="img/Minjung2.jpg">
+            <img id="minjung3" src="img/Minjung3.gif">
+            <img id="minjung4" src="img/Minjung4.gif">
+            <img id="minjung5" src="img/Minjung5.png">
+            <img id="poemdescription" src="img/poemdescription.jpg">
+            <img id="poem" src="img/poem.jpg">
+            <img id="kimmy" src="img/kimchiha.png">
+            <img id="intro" src="img/intro.jpg">
+            <img id="artmov" src="img/artmov.jpg">
+            <img id="symbol" src="img/flag-100.jpg">
+           <video id="protestvid" autoplay loop="true" src="video/protestvid.mp4"></video>
+           <video id="chantvid" autoplay loop="true" src="video/chant.mp4"></video>
+            <a-asset-item id="mountain1-obj" src="obj/mountain1.obj"></a-asset-item>
+            <a-asset-item id="mountain1-mtl" src="obj/mountain1.mtl"></a-asset-item>
+            <a-asset-item id="gun-obj" src="obj/machine-gun.obj"></a-asset-item>
+            <a-asset-item id="gun-mtl" src="obj/machinegun.mtl"></a-asset-item>
+            <a-asset-item id="bottle-obj" src="obj/bottle.obj"></a-asset-item>
+            <a-asset-item id="bottle-mtl" src="obj/bottle.mtl"></a-asset-item>
+            <a-asset-item id="helmut-obj" src="obj/helmut.obj"></a-asset-item>
+            <a-asset-item id="helmut-mtl" src="obj/helmut.mtl"></a-asset-item>
+            <a-asset-item id="shields-obj" src="obj/shields.obj"></a-asset-item>
+            <a-asset-item id="shields-mtl" src="obj/shields.mtl"></a-asset-item>
+            <a-asset-item id="soldier-obj" src="obj/soldier.obj"></a-asset-item>
+            <a-asset-item id="soldier-mtl" src="obj/soldier.mtl"></a-asset-item>
+            <a-asset-item id="flag-obj" src="obj/flag.obj"></a-asset-item>
+            <a-asset-item id="flag-mtl" src="obj/flag.mtl"></a-asset-item>
+          </a-assets>
+     
+       
+          <a-image src="#intro" position= "25 9 13" width="17" height= "14.5" rotation="0 270 0"></a-image>
+          <a-image src="#symbol" position= "24 13 6" width="2.5" height= "2.5" rotation="0 90 0" animation="property: rotation; to: 0 90 360; dur: 10000;easing: linear; loop:true"></a-image>
+          <a-image src="#artmov" position= "-18 5 13" width="8" height= "5" rotation="0 90 0"></a-image>
+      <a-obj-model src="#mountain1-obj" mtl="#mountain1-mtl" position = "-20 -0.5 -20" src="#floor" scale = "16 20 9" rotation="0 90 0"></a-obj-model>
+      <a-obj-model src="#mountain1-obj" mtl="#mountain1-mtl" position = "-22 -0.5 3 " src="#floor" scale = "18 15 9" rotation="0 270 0"></a-obj-model>
+      <a-obj-model src="#mountain1-obj" mtl="#mountain1-mtl" position = "-22 0.5 -6 " src="#floor" scale = "10 26 3" rotation="0 270 0"></a-obj-model>
+      <a-image src="#minjung1" position= "-17 7 -13" width="5" height= "8" rotation="0 90 0"></a-image>
+      <a-image src="#minjung2" position= "-16 3 -7" width="4" height= "5"rotation="0 90 0"></a-image>
+      <a-image src="#minjung3" position= "-17 6 -1" width="5" height= "4"rotation="0 90 0"></a-image>
+      <a-image src="#minjung4" position= "-19.5 7 6" width="4" height= "6"rotation="0 90 0"></a-image>
+      <a-image src="#minjung5" position= "-14 7 -20" width="10" height= "4"rotation="0 90 0"></a-image>
+      <a-image src="#poemdescription" position= "0 2 20" width="4" height= "2"rotation="180 0 180"></a-image>
+      <a-image src="#poem" position= "7 4 20" width="8" height= "6"rotation="180 0 180"></a-image>
+      <a-image src="#kimmy" position= "1.15 4.5 20" width="2" height= "3"rotation="180 0 180"></a-image>
+      <a-obj-model src="#soldier-obj" mtl="#soldier-mtl" position = "-3 0.2 18" scale = "0.3 0.3 0.3" rotation="0 180 0" modify-materials></a-obj-model>
+      <!-- POLICE vs. CIVILIAN WEAPONS-->
+      <a-obj-model src="#gun-obj" mtl="#gun-mtl" position = "12 1.2 -20" scale = "1 1 1" rotation="90 0 180" modify-materials></a-obj-model>
+      <a-obj-model src="#gun-obj" mtl="#gun-mtl" position = "11.5 1.2 -20" scale = "1 1 1" rotation="90 0 180" modify-materials></a-obj-model>
+      <a-obj-model src="#bottle-obj" mtl="#bottle-mtl" position = "20.5 0 -18" scale = "0.7 0.7 0.7" rotation="0 0 0" modify-materials></a-obj-model>
+      <a-obj-model src="#bottle-obj" mtl="#bottle-mtl" position = "20.7 0.2 -18" scale = "0.7 0.7 0.7" rotation="90 45 0" modify-materials></a-obj-model>
+      <a-obj-model src="#helmut-obj" mtl="#helmut-mtl" position = "7.5 0 -18" scale = "0.07 0.07 0.07" rotation="0 0 30" ></a-obj-model>
+      <a-obj-model src="#shields-obj" mtl="#shields-mtl" position = "9 0.2 -20" scale = "0.5 0.5 0.5" rotation="0 90 0" ></a-obj-model>
+      <a-obj-model src="#flag-obj" mtl="#flag-mtl" position = "23 0.2 -20" scale = "1 1 1" rotation="0 270 0" ></a-obj-model>
+      <a-video src="#protestvid" width="10" height="9" position="20 10 -25" rotation="0 0 0" scale="2 1.5 1.5"></a-video> 
+      <a-video src="#chantvid" width="10" height="8" position="7 7 -22" rotation="0 0 0" scale="1.1 .7 .7"></a-video> 
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="50" height="50" color ="#D3D3D3" src="#floor"></a-plane>
+      <a-sky color="white"></a-sky>
+      <a-entity camera="" position="-2.02219 4 5.70096" wasd-controls="" rotation="0 270 0" look-controls="" aframe-injected="" data-aframe-inspector-original-camera=""></a-entity>
+
+
+    </a-scene>
+  </body>
+</html>
